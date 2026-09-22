@@ -1,0 +1,18 @@
+{
+  "name": "hospeda-anuncios",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vitrine estática com administração segura em Cloudflare Workers e D1",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "db:remote": "wrangler d1 migrations apply DB --remote",
+    "preview:cloudflare": "wrangler dev",
+    "deploy": "node scripts/predeploy.mjs && wrangler deploy"
+  },
+  "engines": { "node": ">=24" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}

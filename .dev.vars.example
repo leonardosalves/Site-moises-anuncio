@@ -1,0 +1,3 @@
+# Somente para wrangler dev. Use uma chave longa, aleatória e privada.
+# Para produção: npx wrangler secret put SETUP_TOKEN
+SETUP_TOKEN="substitua-por-uma-chave-aleatoria-de-pelo-menos-32-caracteres"

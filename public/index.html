@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospeda Anuncios — Carros & imóveis</title>
+  <meta name="description" content="Encontre carros e imóveis, explore as fotos e veja todos os detalhes. Seu próximo capítulo começa no Hospeda Anuncios.">
+  <meta name="theme-color" content="#192e3b">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css"><script type="module" src="/assets/catalog.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#anuncios">Ir para os anúncios</a>
+  <header class="site-header"><div class="container header-inner">
+    <a href="/" class="brand" aria-label="Hospeda Anuncios, início"><img src="/favicon.svg" alt="" width="40" height="40"><span>hospeda<span class="brand-sub">ANUNCIOS</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a class="active" href="/#anuncios" data-category="all">Todos os anúncios</a><a href="/?categoria=imovel#anuncios" data-category="imovel">Imóveis</a><a href="/?categoria=veiculo#anuncios" data-category="veiculo">Veículos</a></nav>
+    <a class="button button-outline header-login" href="/login.html"><span data-icon="grid"></span><span>Área de gestão</span></a>
+  </div></header>
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><span class="eyebrow"><span class="tiny-line"></span> BONS ENCONTROS COMEÇAM AQUI</span><h1 id="hero-title">O seu próximo<br>capítulo está <span>aqui.</span></h1><p>Um novo endereço. Uma nova direção.<br>Encontre o que combina com a sua vida.</p><a class="button button-dark" href="#anuncios">Explore os anúncios <span data-icon="arrow-down-right"></span></a></div>
+      <div class="hero-image" id="hero-image"><div class="hero-caption"><span class="hero-caption-icon" data-icon="home"></span><span>Novos espaços.<strong>Novas possibilidades.</strong></span><span data-icon="arrow-up-right"></span></div></div>
+      <span class="hero-index" aria-hidden="true">01 — UM NOVO COMEÇO</span>
+    </section>
+    <section id="anuncios" class="catalog-section" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><span class="eyebrow muted">NOSSA VITRINE</span><h2 id="catalog-title">Encontre sua próxima conquista<span class="accent-dot">.</span></h2></div><p id="result-count" class="muted" aria-live="polite">Carregando anúncios…</p></div>
+      <div class="catalog-toolbar"><div class="category-tabs" role="group" aria-label="Categoria dos anúncios"><button class="category-tab selected" data-filter="all" aria-pressed="true"><span data-icon="grid"></span> Todos <span class="tab-count" id="count-all">0</span></button><button class="category-tab" data-filter="imovel" aria-pressed="false"><span data-icon="home"></span> Imóveis <span class="tab-count" id="count-imovel">0</span></button><button class="category-tab" data-filter="veiculo" aria-pressed="false"><span data-icon="car"></span> Veículos <span class="tab-count" id="count-veiculo">0</span></button></div><label class="sort-control"><span data-icon="sort"></span><span class="sr-only">Ordenar anúncios</span><select id="sort"><option value="recent">Mais recentes</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option></select></label></div>
+      <div id="demo-note" class="demo-note" hidden><span data-icon="info"></span> Prévia com anúncios e fotos ilustrativas. Nenhum destes itens está sendo ofertado.</div>
+      <div id="listing-grid" class="listing-grid" aria-live="polite"><div class="loading-state">Preparando a vitrine…</div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a href="/" class="brand brand-small"><img src="/favicon.svg" alt="" width="30" height="30"><span>hospeda<span class="brand-sub">ANUNCIOS</span></span></a><p>Novos caminhos. Novos endereços.</p><span>© <span data-year></span> Hospeda Anuncios</span></div></footer>
+  <div id="toast" role="status" class="toast" hidden></div>
+</body></html>
